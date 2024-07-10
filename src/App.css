@@ -1,0 +1,16 @@
+.App {
+    text-align: center;
+  }
+  
+  section {
+    padding: 4rem 1rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+  }
+  
+  section:nth-child(even) {
+    background-color: #e0e0e0;
+  }
+
+  
+  
