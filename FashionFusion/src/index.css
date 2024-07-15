@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Nabar */
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 55px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.5rem;
+  }
+
+  .nav-menu.active {
+    background: white;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 10;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 0.5rem;
+    width: 100%;
+    display: table;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
+/* Navbar End */
