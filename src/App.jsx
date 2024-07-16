@@ -7,6 +7,9 @@ import LifeCycle from './pages/LifeCycle.jsx';
 import Timer from './components/Timer.jsx';
 import FunctionalProps from './components/FunctionalProps.jsx';
 import ComA from './components/ComA.jsx';
+import ContactForm from './components/FormsComponent/ContactForm.jsx';
+import LoginForm from './components/FormsComponent/LoginForm.jsx';
+import RegisterForm from './components/FormsComponent/RegisterForm.jsx';
 
 function App() {
   return (
@@ -19,7 +22,9 @@ function App() {
           <Route path='/timer' element={<Timer />} />
           <Route path='/functionalprops' element={<FunctionalProps />} />
           <Route path='/coma' element={<ComA/>} />
-          
+          <Route path="/contact" element={<ContactForm />} />
+        <Route path="/login" element={<LoginForm />} />
+        <Route path="/register" element={<RegisterForm />} />
         </Routes>
       </BrowserRouter>
     </>

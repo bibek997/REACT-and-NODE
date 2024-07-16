@@ -6,7 +6,7 @@ const Drawer = () => {
   return (
     <div className="relative">
       <button
-        className="p-2 bg-gray-800 text-white rounded-md"
+        className="p-2 bg-blue-500 text-white rounded-md"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? 'Close' : 'Open'} Drawer
