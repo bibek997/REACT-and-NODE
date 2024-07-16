@@ -25,7 +25,7 @@ const HeroSection = () => {
     </div>
     <div class="md:w-1/2 md:mt-0 py-3">
       <img
-        src="src\assets\bibek.jpg"
+        src="src/assets/bibek.jpg"
         alt="Bibek"
         class="rounded-lg shadow-lg w-full"
       />
