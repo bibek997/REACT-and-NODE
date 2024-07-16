@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Home = () => {
+const HeroSection = () => {
   return (
     <section
     class="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 bg-grey-200 rounded-none"
@@ -34,4 +34,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default HeroSection

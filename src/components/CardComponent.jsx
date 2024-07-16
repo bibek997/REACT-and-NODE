@@ -1,6 +1,6 @@
 import React from "react";
 import Image from '../assets/bibek.jpg'
-export default function Card({ img, name, rollno }) {
+export default function CardComponent({ img, name, rollno }) {
   return (
     <div className="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden">
       <div className="flex justify-center items-center">

@@ -62,8 +62,6 @@ const products = [
     price: '95.50',
   },
 
- 
-  // Add more product objects as needed
 ];
 
 const Thrifts = () => {
