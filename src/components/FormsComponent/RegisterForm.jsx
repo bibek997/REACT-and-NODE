@@ -17,7 +17,7 @@ const RegisterForm = () => {
           </div>
         </div>
         <div className="flex-1 p-8">
-          <h2 className="flex justify-center text-xl font-bold mb-4">Create an account</h2>
+          <h2 className="flex justify-center text-2xl font-bold mb-4">Create an account</h2>
          
 
           <form className="space-y-4">
