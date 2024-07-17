@@ -3,11 +3,11 @@ import React from 'react';
 const Step4 = ({ formData, onPrev }) => {
   return (
     <div>
-      <h2 className="text-2xl font-semibold mb-4">Confirmation</h2>
-      <p className="mb-2"><strong>Name:</strong> {formData.personalInfo.name}</p>
-      <p className="mb-2"><strong>Email:</strong> {formData.personalInfo.email}</p>
-      <p className="mb-2"><strong>Event:</strong> {formData.eventSelection.event}</p>
-      <p className="mb-2"><strong>Card Number:</strong> {formData.paymentInfo.cardNumber}</p>
+      <h2 className="text-2xl font-semibold mb-4 text-gray-800">Confirmation</h2>
+      <p className="mb-2 text-gray-500"><strong>Name:</strong> {formData.personalInfo.name}</p>
+      <p className="mb-2 text-gray-500"><strong>Email:</strong> {formData.personalInfo.email}</p>
+      <p className="mb-2 text-gray-500"><strong>Event:</strong> {formData.eventSelection.event}</p>
+      <p className="mb-2 text-gray-500"><strong>Card Number:</strong> {formData.paymentInfo.cardNumber}</p>
       <div className="flex justify-between mt-4">
         <button onClick={onPrev} className="bg-gray-300 text-gray-700 py-2 px-4 rounded">
           Previous

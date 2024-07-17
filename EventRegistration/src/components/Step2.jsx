@@ -17,11 +17,14 @@ const Step2 = ({ onNext, onPrev, onDataChange }) => {
 
   return (
     <div>
-      <h2 className="text-2xl font-semibold mb-4">Event Selection</h2>
+      <h2 className="text-2xl font-semibold mb-4 text-gray-800">Event Selection</h2>
       <select value={event} onChange={(e) => setEvent(e.target.value)} className="border p-2 w-full mb-2 rounded bg-white text-black">
-        <option value="">Select Event</option>
-        <option value="event1">Event 1</option>
-        <option value="event2">Event 2</option>
+        <option value="" disabled=''>Select Event</option>
+        <option value="event1">Annual Conference 2024</option>
+        <option value="event2">Tech Innovators Meetup</option>
+        <option value="event3">Marketing Summit</option>
+        <option value="event4">Healthcare Expo</option>
+        <option value="event5">AI & Machine Learning Workshop</option>
       </select>
       {errors.event && <span className="text-red-500 text-sm">{errors.event}</span>}
       <div className="flex justify-between mt-4">

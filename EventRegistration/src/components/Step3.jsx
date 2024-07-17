@@ -6,7 +6,11 @@ const Step3 = ({ onNext, onPrev, onDataChange }) => {
 
   const handleNext = () => {
     const newErrors = {};
-    if (!cardNumber) newErrors.cardNumber = 'Card number is required';
+    if (!cardNumber) {
+      newErrors.cardNumber = 'Card number is required';
+    } else if (!/^\d+$/.test(cardNumber)) {
+      newErrors.cardNumber = 'Card number must be numeric';
+    }
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
@@ -17,10 +21,10 @@ const Step3 = ({ onNext, onPrev, onDataChange }) => {
 
   return (
     <div>
-      <h2 className="text-2xl font-semibold mb-4">Payment Information</h2>
+      <h2 className="text-2xl font-semibold mb-4 text-gray-800">Payment Information</h2>
       <input
         type="text"
-        value={cardNumber}
+        value={cardNumber}w
         onChange={(e) => setCardNumber(e.target.value)}
         placeholder="Card Number"
         className="border p-2 w-full mb-2 rounded bg-white text-black"
