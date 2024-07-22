@@ -10,6 +10,7 @@ import Wishlist from './components/Wishlist.jsx'
 import Profile from './components/Profile.jsx';
 import LoginForm from './components/LoginForm.jsx';
 import RegisterForm from './components/RegisterForm.jsx'
+import SignUp from './components/SignUp.jsx';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Route path='/profile' element={<Profile/>}/>
       <Route path='/login' element={<LoginForm/>}/>
       <Route path='/register' element={<RegisterForm/>}/>
+      <Route path='/signup' element={<SignUp/>}/>
       
     </Routes>
     </BrowserRouter>
