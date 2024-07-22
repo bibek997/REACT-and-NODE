@@ -11,6 +11,7 @@ import Profile from './components/Profile.jsx';
 import LoginForm from './components/LoginForm.jsx';
 import RegisterForm from './components/RegisterForm.jsx'
 import SignUp from './pages/SignUp.jsx';
+import LoginPage from './pages/LoginPage.jsx'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Route path='/login' element={<LoginForm/>}/>
       <Route path='/register' element={<RegisterForm/>}/>
       <Route path='/signup' element={<SignUp/>}/>
+      <Route path='/loginpage' element={<LoginPage/>}/>
       
     </Routes>
     </BrowserRouter>
