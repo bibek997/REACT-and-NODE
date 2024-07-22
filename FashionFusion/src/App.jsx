@@ -10,7 +10,7 @@ import Wishlist from './components/Wishlist.jsx'
 import Profile from './components/Profile.jsx';
 import LoginForm from './components/LoginForm.jsx';
 import RegisterForm from './components/RegisterForm.jsx'
-import SignUp from './components/SignUp.jsx';
+import SignUp from './pages/SignUp.jsx';
 
 function App() {
   return (
