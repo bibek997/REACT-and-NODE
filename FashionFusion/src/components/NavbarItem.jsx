@@ -26,14 +26,14 @@ const NavbarItem = ({ click, closeMobileMenu }) => {
       </li>
       <li className="nav-item">
         <Link to="/profile" className="nav-links text-black hover:text-gray-500 py-2 md:py-0" onClick={closeMobileMenu}>
-          Profile
+        <img src="src/assets/profileicon.png" alt="Profile Icon" className="h-7" />
         </Link>
       </li>
-      <li className="nav-item">
+      {/* <li className="nav-item">
         <Link to="/product" className="nav-links text-black hover:text-gray-500 py-2 md:py-0" onClick={closeMobileMenu}>
           Product
         </Link>
-      </li>
+      </li> */}
     </ul>
   );
 };
