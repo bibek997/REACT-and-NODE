@@ -18,16 +18,16 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path='/home' element={<Homepage/>}/>
-      <Route path='/' element={<Login/>}/>
+      <Route path='/login' element={<Login/>}/>
       <Route path='/product' element={<Product/>}/>
       <Route path='/wardrobe' element={<Wardrobe/>}/>
       <Route path='/outfits' element={<Outfits/>}/>
       <Route path='/wishlist' element={<Wishlist/>}/>
       <Route path='/profile' element={<Profile/>}/>
-      <Route path='/login' element={<LoginForm/>}/>
-      <Route path='/register' element={<RegisterForm/>}/>
+      {/* <Route path='/login' element={<LoginForm/>}/> */}
+      {/* <Route path='/register' element={<RegisterForm/>}/> */}
       <Route path='/signup' element={<SignUp/>}/>
-      <Route path='/loginpage' element={<LoginPage/>}/>
+      <Route path='/' element={<LoginPage/>}/>
       
     </Routes>
     </BrowserRouter>

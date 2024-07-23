@@ -8,7 +8,6 @@ const CardComponent = ({ image, productName, sellername, price, condition }) => 
       </div>
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{productName}</div>
-        {/* <p className="text-gray-700 text-base mb-2">{sellername}</p> */}
         {condition && <div className="text-gray-900 mb-2">Condition:{condition}</div>}
         <span className="text-gray-900 font-bold text-xl">${price}</span>
       </div>

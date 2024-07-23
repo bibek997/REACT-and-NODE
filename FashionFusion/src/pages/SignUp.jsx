@@ -6,11 +6,19 @@ const SignUp = () => {
     <div className="flex flex-col md:flex-row min-h-screen bg-gray-100">
       {/* Image */}
       <div className="hidden md:flex md:w-1/2 items-center justify-center p-4 md:p-0">
-      <div className="flex flex-col items-center md:flex-row md:space-x-4">
-          <img src="src/assets/avatar1.jpg" alt="Avatar 1" className="h-48 w-32 mb-8 md:h-96 md:w-64 md:mb-44 md:mr-14" />
-          <img src="src/assets/avatar2.jpg" alt="Avatar 2" className="h-48 w-32 mt-8 md:h-96 md:w-64 md:mt-44 md:ml-auto md:mr-14" />
-        </div>
-      </div>
+  <div className="flex flex-col items-center md:flex-row md:space-x-4">
+    <img 
+      src="src/assets/avatar1.jpg" 
+      alt="Avatar 1" 
+      className="h-48 w-32 md:h-96 md:w-64 mb-8 md:mb-44 md:mr-4"
+    />
+    <img 
+      src="src/assets/avatar2.jpg" 
+      alt="Avatar 2" 
+      className="h-48 w-32 md:h-96 md:w-64 mt-8 md:mt-44 md:ml-4"
+    />
+  </div>
+</div>
       {/* Sign Up Form */}
       <div className="md:w-1/2 flex items-center justify-center bg-gradient-to-r from-gray-400 to-gray-800 p-8">
         <div className="max-w-md w-full space-y-8">
@@ -34,7 +42,7 @@ const SignUp = () => {
             </div>
             {/* Sign Up Button */}
             <div>
-              <Link to="/loginpage">
+              <Link to="/">
                 <button type="submit" className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                   Sign Up
                 </button>
@@ -50,7 +58,7 @@ const SignUp = () => {
               <img src="src/assets/facebook.png" alt="Facebook" className="h-7 w-7" /> 
             </button>
           </div>
-          <p className="text-center text-sm text-gray-400 ">Been here before? <a href="/loginpage" className="text-blue-500">Log in</a></p>          
+          <p className="text-center text-sm text-gray-400 ">Been here before? <a href="/" className="text-blue-500">Log in</a></p>          
           </form>
         </div>
       </div>
