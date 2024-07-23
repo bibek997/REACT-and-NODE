@@ -1,11 +1,12 @@
 import React from 'react'
 import Navbar from '../components/Navbar.jsx'
+import Thrifts from './Thrifts.jsx'
 
 const Outfits = () => {
   return (
     <div>
       <Navbar/>
-      Add Outfits
+      <Thrifts/>
     </div>
   )
 }

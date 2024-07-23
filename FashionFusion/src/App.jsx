@@ -11,14 +11,12 @@ import Profile from './pages/Profile.jsx';
 
 import SignUp from './pages/SignUp.jsx';
 import LoginPage from './pages/LoginPage.jsx'
-import LandingPage from './pages/LandingPage.jsx';
 
 function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path='/' element={<LandingPage/>}/>
-      <Route path='/home' element={<Homepage/>}/>
+      <Route path='/' element={<Homepage/>}/>
       <Route path='/logindraft' element={<Login/>}/>
       <Route path='/product' element={<Product/>}/>
       <Route path='/wardrobe' element={<Wardrobe/>}/>
