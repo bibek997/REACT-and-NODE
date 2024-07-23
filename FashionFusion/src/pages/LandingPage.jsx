@@ -4,7 +4,7 @@ import Slideshow from '../components/SlideShow'
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className='min-h-screen'>
       <Navbar/>
       <div className="container mx-auto mt-10">
       <h1 className="text-2xl font-bold text-center mb-6">OOTD Calendar</h1>

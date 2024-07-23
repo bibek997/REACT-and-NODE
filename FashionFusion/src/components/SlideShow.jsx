@@ -25,9 +25,12 @@ const Slideshow = () => {
       >
         {weekData.map((data, index) => (
           <SwiperSlide key={index}>
-            <WeekCardComponent day={data.day} date={data.date} icon={data.icon} />
+            <WeekCardComponent day={data.day} date={data.date}/>
           </SwiperSlide>
         ))}
+        <div>
+          write here
+        </div>
       </Swiper>
     </div>
   );
