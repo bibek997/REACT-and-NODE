@@ -1,7 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import TextInput from '../components/TextInput';
 
 const LoginPage = () => {
+  const inputFields = [
+    {
+      label:"EMAIL",
+      type:"text",
+      placeholder:"Enter your email",
+    },
+    {
+      label:"PASSWORD",
+      type:"text",
+      placeholder:"Enter your password",
+    },
+  ]
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-gray-100">
       {/* Image */}
@@ -27,14 +40,14 @@ const LoginPage = () => {
           </div>
           <form className="mt-8 space-y-6 bg-transparent">
             <div className="rounded-md shadow-sm space-y-6">
-              <div className="mb-5">
-                <label className="block text-white text-sm">EMAIL</label>
-                <input type="text" placeholder="Enter your email" className="w-full my-2 px-4 py-2 border border-gray-300 rounded-lg text-sm bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-indigo-500" />
-              </div>
-              <div className="mb-5">
-                <label className="block text-white text-sm">PASSWORD</label>
-                <input type="password" placeholder="Enter your password" className="w-full my-2 px-4 py-2 border border-gray-300 rounded-lg text-sm bg-transparent text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-indigo-500" />
-              </div>
+            {inputFields.map((field, index)=> (
+              <TextInput
+              key={index}
+              label={field.label}
+              type={field.type}
+              placeholder={field.placeholder}
+              />
+            ))}
             </div>
             {/* Login Button */}
             <div>
