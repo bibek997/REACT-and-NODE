@@ -53,7 +53,7 @@ const SignUp = () => {
             </div>
             {/* Sign Up Button */}
             <div>
-              <Link to="/">
+              <Link to="/login">
                 <button type="submit" className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                   Sign Up
                 </button>
@@ -68,7 +68,7 @@ const SignUp = () => {
                 <img src="src/assets/facebook.png" alt="Facebook" className="h-7 w-7" /> 
               </button>
             </div>
-            <p className="text-center text-sm text-gray-400">Been here before? <a href="/" className="text-blue-500">Log in</a></p>          
+            <p className="text-center text-sm text-gray-400">Been here before? <a href="/login" className="text-blue-500">Log in</a></p>          
           </form>
         </div>
       </div>
