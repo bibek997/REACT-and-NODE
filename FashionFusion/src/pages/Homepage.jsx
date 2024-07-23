@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar.jsx'
-import Thrifts from '../components/Thrifts.jsx'
+import Thrifts from './Thrifts.jsx'
 
 
 const Homepage = () => {

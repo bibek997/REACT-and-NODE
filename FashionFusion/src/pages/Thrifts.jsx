@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from '../assets/shirt.png'
 import Image2 from '../assets/jacket.png'
-import CardComponent from './CardComponent.jsx';
+import CardComponent from '../components/CardComponent.jsx';
 
 
 const products = [
