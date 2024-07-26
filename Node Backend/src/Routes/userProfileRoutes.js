@@ -1,7 +1,9 @@
-const express = require('express');
-const { addUserProfile } = require('../Controllers/userProfileController');
-const router = express.Router();
+const express=require('express');
+const userProfile = require('../controllers/userProifleController');
+const app=express();
 
-router.post('/userProfile', addUserProfile);
 
-module.exports = router;
+app.post('/userProfile',userProfile);
+
+
+module.exports=app;

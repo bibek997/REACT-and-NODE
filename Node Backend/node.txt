@@ -1,1 +1,1 @@
-node.js is runtime environment of js
+nodejs is runtime environment of js
