@@ -1,1 +1,0 @@
-Attributes: _id, userId, recipientId, message, timestamp
