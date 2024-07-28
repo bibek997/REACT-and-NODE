@@ -1,0 +1,1 @@
+Attributes: _id, userId, itemName, category, color, brand, occasion, image, wearabilityStatus, createdAt

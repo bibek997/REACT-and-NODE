@@ -1,0 +1,1 @@
+Attributes: _id, username, email, password, profilePicture, createdAt
